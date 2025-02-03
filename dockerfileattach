@@ -1,4 +1,12 @@
 Create additional EBS Volume , fdisk and mount it.
+lsblk
+fdisk /dev/xvdf
+n  (new)
+p  (Primary
+w  (save operation)
+
+Make File System
+mkfs.ext4 /dev/xvdf1
   
 sudo systemctl stop docker.service
   
