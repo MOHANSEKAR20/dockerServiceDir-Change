@@ -7,6 +7,13 @@ w  (save operation)
 
 Make File System
 mkfs.ext4 /dev/xvdf1
+
+#Copy the UUID from here and create one directory
+mkdir dockerstore
+nano /etc/fstab
+
+#paste the UUID remove ":" and add "="
+UUID=        dockerstore  ext4
   
 sudo systemctl stop docker.service
   
